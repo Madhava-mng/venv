@@ -5,9 +5,9 @@ vritual invironment for termux
 * copy the command and past it in to termux
 
 ```bash
-# copy from hear
-pkg update &&\
-pkg install wget &&\
+#copy from hear
+pkg update && pkg upgrade -y &&\
+pkg install wget -y &&\
 wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_0.0.1_all.deb.tar &&\
 tar -xvf venv_0.0.1_all.deb.tar && apt install ./venv_0.0.1_all.deb
 # ends hear
