@@ -1,0 +1,14 @@
+{
+  "name": "venv",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Madhava-mng/venv",
+  "maintainer": "Madhava-mng",
+  "description": "viritual linux environment for termux.",
+  "arch": "all",
+  "depends": ["python"],
+  "files" :{
+    "venv.py": "bin/venv"
+  }
+}
+
+
