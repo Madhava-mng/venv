@@ -1,5 +1,5 @@
 # venv
-vritual invironment for termux
+viritual invironment for termux
 
 ## installation:
 * copy the command and past it in to termux
@@ -18,7 +18,7 @@ tar -xvf venv_0.0.1_all.deb.tar && apt install ./venv_0.0.1_all.deb
 ## usage:
 ```bash
 $ venv --help
-venv: linux vritual environment for termux. (v0.0.1)
+venv: linux viritual environment for termux. (v0.0.1)
 
     show            Print all linux environment.
     pull <name>     Pull linux environment.
