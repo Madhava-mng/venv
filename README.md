@@ -6,6 +6,7 @@ viritual invironment for termux
 
 ```bash
 #copy from hear
+export TMP=$(mktemp -d) && cd $TMP &&\
 pkg update && pkg upgrade -y &&\
 pkg install wget python -y &&\
 wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_0.0.2_all.deb.tar &&\
