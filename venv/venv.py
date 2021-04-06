@@ -30,7 +30,7 @@ E = {
         "RUN": "venv run <env>",
         "RME": "venv remove <env>",
         "PER": "venv pull <env> [name]",
-        "HELP": """venv: linux vritual environment for termux. (v0.0.1)\n
+        "HELP": f"""venv: linux vritual environment for termux. (v{VERSION})\n
     show            Print all linux environment.
     pull <name>     Pull linux environment.
     list            Print all pulled linux env.
@@ -87,8 +87,8 @@ def update():
             if(input(G+'[?] Do you want to upgrade now. '+Y+'[Y/n]: ').lower() not in ['n', 'no']):
                 note('[+] Upgrading to (v'+DATA+')', G)
                 dir_ = _run(["mktemp", '-d'], capture_output=True).stdout.decode()
-                _sys("cd "+dir_)
-                _sys("wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_"+DATA+"_all.deb.tar && tar -xvf venv_"+DATA+"_all.deb.tar && apt install ./venv_"+DATA+"_all.deb")
+                note('[+] Temp: '+dir_[:-1], G)
+                _sys("cd "+dir_+"\nwget https://github.com/Madhava-mng/venv/raw/main/venv/venv_"+DATA+"_all.deb.tar && tar -xvf venv_"+DATA+"_all.deb.tar && apt install ./venv_"+DATA+"_all.deb")
         else:
             note('[+] Package uptodate (v'+VERSION+")", B)
     except:

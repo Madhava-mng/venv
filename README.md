@@ -8,8 +8,8 @@ viritual invironment for termux
 #copy from hear
 pkg update && pkg upgrade -y &&\
 pkg install wget python -y &&\
-wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_0.0.1_all.deb.tar &&\
-tar -xvf venv_0.0.1_all.deb.tar && apt install ./venv_0.0.1_all.deb
+wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_0.0.2_all.deb.tar &&\
+tar -xvf venv_0.0.2_all.deb.tar && apt install ./venv_0.0.2_all.deb
 # ends hear
 ```
 
@@ -18,13 +18,14 @@ tar -xvf venv_0.0.1_all.deb.tar && apt install ./venv_0.0.1_all.deb
 ## usage:
 ```bash
 $ venv --help
-venv: linux viritual environment for termux. (v0.0.1)
+venv: linux viritual environment for termux.
 
     show            Print all linux environment.
     pull <name>     Pull linux environment.
     list            Print all pulled linux env.
     run <name>      Launch env.
     remove <name>   Remove the env permenently.
+    upgrade         upgrade the venv.
     help, --help    To show this message.
 ```
 
@@ -36,7 +37,7 @@ $ venv show
 ## pull env:
 * pull [distro] [name]
 * [name] is optional
-```bash                    
+```bash
 $ venv pull alpine test1
 ```
 
