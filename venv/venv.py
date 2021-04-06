@@ -88,7 +88,7 @@ def update():
                 note('[+] Upgrading to (v'+DATA+')', G)
                 dir_ = _run(["mktemp", '-d'], capture_output=True).stdout.decode()
                 _sys("cd "+dir_)
-                _sys("wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_"DATA"_all.deb.tar && tar -xvf venv_"+DATA+"_all.deb.tar && apt install ./venv_"+DATA+"_all.deb")
+                _sys("wget https://github.com/Madhava-mng/venv/raw/main/venv/venv_"+DATA+"_all.deb.tar && tar -xvf venv_"+DATA+"_all.deb.tar && apt install ./venv_"+DATA+"_all.deb")
         else:
             note('[+] Package uptodate (v'+VERSION+")", B)
     except:
