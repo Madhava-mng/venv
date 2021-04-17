@@ -27,6 +27,7 @@ venv: linux viritual environment for termux.
     run <name>      Launch env.
     remove <name>   Remove the env permenently.
     upgrade         upgrade the venv.
+    kill-tor        Kill the tor service.
     help, --help    To show this message.
 ```
 
@@ -51,6 +52,9 @@ $ venv list
 * run [name]
 ```bash
 $ venv run test1
+localhost:~# sh setup.sh
+localhost:~# exit
+$ venv run --torify test1
 ```
 
 ## remove:

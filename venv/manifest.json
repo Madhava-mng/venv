@@ -1,11 +1,11 @@
 {
   "name": "venv",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/Madhava-mng/venv",
-  "maintainer": "Madhava-mng",
+  "maintainer": "@Madhava-mng",
   "description": "viritual linux environment for termux.",
   "arch": "all",
-  "depends": ["python"],
+  "depends": ["python", "tor"],
   "files" :{
     "venv.py": "bin/venv"
   }
