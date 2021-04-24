@@ -16,7 +16,10 @@ from os import get_terminal_size as _size
 from json import loads as _loads
 
 BC = "https://raw.githubusercontent.com/Madhava-mng/bc/main/venv/lists"
-VERSION = '0.0.3'
+VERSION = '0.0.4'
+
+
+
 #BC = "http://127.0.0.1:8000/lists"
 R, G, N, B, Y = "\u001b[31;1m", "\u001b[32;1m","\u001b[00m", "\u001b[34;1m", "\u001b[33;1m"
 E = {
@@ -34,13 +37,13 @@ venv run <arg> <name>
         "RME": "venv remove <env>",
         "PER": "venv pull <env> [name]",
         "HELP": f"""venv: linux viritual environment for termux. (v{VERSION})\n
-    show            Print all linux environment.
+    show            Print all linux environment
     pull <name>     Pull linux environment.
     list            Print all pulled linux env.
     run <name>      Launch env. arg: [--tor, -t, --torify]
     remove <name>   Remove the env permenently.
     upgrade         Check for update.
-    kill-tor        kill tor service.
+    kill-tor, kill  kill tor service.
     help, --help    To show this message.
 
 
@@ -73,6 +76,7 @@ socks4  127.0.0.1 9050
 UPDATE_INSTALL = """
 apt update -y 2>/dev/null
 apt upgrade -y 2>/dev/null
+apt install proxychains4 -y 2>/dev/null
 pacman -Syu --noconfirm 2>/dev/null
 pacman -S --noconfirm proxychains 2>/dev/null
 apk update 2>/dev/null
