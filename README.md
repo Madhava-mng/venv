@@ -24,9 +24,9 @@ $ venv --help
 venv: linux viritual environment for termux.
 
     show            Print all linux environment.
-    pull <name>     Pull linux environment.
+    pull <venv>     Pull linux environment.
     list            Print all pulled linux env.
-    run <name>      Launch env.
+    run <venv>      Launch env.
     remove <name>   Remove the env permenently.
     upgrade         upgrade the venv.
     kill-tor        Kill the tor service.
@@ -39,8 +39,8 @@ $ venv show
 ```
 
 ## pull env:
-* pull [distro] [name]
-* [name] is optional
+* pull [distro] [venv]
+* [vp] is optional
 ```bash
 $ venv pull alpine test1
 ```
@@ -51,7 +51,7 @@ $ venv list
 ```
 
 ## launch:
-* run [name]
+* run [aftabghauri/venv]
 ```bash
 $ venv run test1
 localhost:~# sh setup.sh
